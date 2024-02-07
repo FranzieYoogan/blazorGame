@@ -86,7 +86,12 @@ main[b-cve67x82ue] {
 }
 
 
+@media only screen and (max-width: 554px) {
+    body[b-cve67x82ue] {
+        background: linear-gradient(200deg, black 90%, white 10%) !important;
 
+    }
+  }
 
 #blazor-error-ui[b-cve67x82ue] {
     background: lightyellow;

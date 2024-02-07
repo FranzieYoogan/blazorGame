@@ -15,7 +15,20 @@
     font-size: 50px;
     font-family: pixel;
     text-shadow: 2px 2px 2px white;
+    transition: 3s;
+
 }
+
+.imgStyle:hover {
+    transition: 1s !important;
+    transform:
+    perspective(750px)
+    translate3d(0px, 0px, 150px)
+    rotateX(-27deg)
+    rotateY(27deg);
+}
+
+
 @font-face {
     font-family: pixel;
     src: url(/font/Minecraft.ttf);
@@ -26,8 +39,10 @@
     border: 2px solid rgb(255, 107, 255);
     border-radius: 30px;
     width: auto;
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 350px;
+    max-width: 350px;
+    box-shadow: 2px 2px 2px 2px black;
+    transition: 3s !important;
     /* transform: 
     perspective(55px)
     rotateX(1deg)
@@ -57,5 +72,14 @@
     width: 50%;
     position: relative;
     left: 30%;
+
 }
 
+
+.titleStyle:hover {
+    transition: 1s;
+    transform:
+    perspective(300px)
+ translate3d(0px, 0px, 10px)
+    rotateX(27deg);
+}
