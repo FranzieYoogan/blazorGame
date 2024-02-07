@@ -1,0 +1,53 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\blazorSimpleGame.bundle.scp.css",
+      "PackagePath": "staticwebassets\\blazorSimpleGame.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\app.css",
+      "PackagePath": "staticwebassets\\app.css"
+    },
+    {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\css\\landingPage.css",
+      "PackagePath": "staticwebassets\\css\\landingPage.css"
+    },
+    {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\favicon.png",
+      "PackagePath": "staticwebassets\\favicon.png"
+    },
+    {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\font\\Minecraft.ttf",
+      "PackagePath": "staticwebassets\\font\\Minecraft.ttf"
+    },
+    {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\img\\landingPage\\crona.png",
+      "PackagePath": "staticwebassets\\img\\landingPage\\crona.png"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.blazorSimpleGame.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.blazorSimpleGame.props",
+      "PackagePath": "build\\blazorSimpleGame.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.blazorSimpleGame.props",
+      "PackagePath": "buildMultiTargeting\\blazorSimpleGame.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.blazorSimpleGame.props",
+      "PackagePath": "buildTransitive\\blazorSimpleGame.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
