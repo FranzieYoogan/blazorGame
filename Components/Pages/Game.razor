@@ -33,8 +33,8 @@
 <h1 class="resultStyle" style="@changeColor2">RESULLT: @result</h1>
             <label for="color"  class="labelStyle block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose your answer</label>
             
-        <EditForm Model="checkingAnswer">
-            <input type="text" id="color" style="@changeColor;@changeBorder" @bind-value="checkingAnswer" class="inputStyle bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="color..." required>
+        <EditForm Model="answerRaw">
+            <input type="text" id="color" pattern="[a-zA-Z][a-zA-Z\s]*" style="@changeColor;@changeBorder" @bind-value="answerRaw" class="inputStyle bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="color..." required>
       
         <button type="button" @onclick="answer"  class="buttonStyle text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">ANSWER</button>
       </EditForm>
@@ -107,7 +107,8 @@
         private string result = "";
         private string colorX = "";
         private string colorY = "";
-        private string checkingAnswer {get; set;} = "";
+        private string answerRaw {get; set;} = "";
+        private string checkingAnswer = "";
         private string changeColor = "";
 
      private string changeColor2 = "";
@@ -210,14 +211,14 @@ private void  answer() {
 
            if(colorX == "red" && colorY == "pink" || colorX == "pink" && colorY == "red"){
 
-            result = "raspberry pink";
+            result = "raspberrypink";
 
 
         } 
 
            if(colorX == "red" && colorY == "black" ||  colorX == "black" && colorY == "red"){
 
-            result = "dark red";
+            result = "darkred";
 
 
         } 
@@ -255,14 +256,14 @@ private void  answer() {
 
              if(colorX == "purple" && colorY == "black" || colorX == "black" && colorY == "purple"){
 
-            result = "dark purple";
+            result = "darkpurple";
 
 
         } 
 
              if(colorX == "purple" && colorY == "white" || colorX == "white" && colorY == "purple"){
 
-            result = "light purple";
+            result = "lightpurple";
 
 
         } 
@@ -280,7 +281,7 @@ private void  answer() {
 
               if(colorX == "pink" && colorY == "red" ||  colorX == "red" && colorY == "pink"){
 
-            result = "raspberry pink";
+            result = "raspberrypink";
 
 
         } 
@@ -294,7 +295,7 @@ private void  answer() {
 
               if(colorX == "pink" && colorY == "black" || colorX == "black" && colorY == "pink"){
 
-            result = "dark pink";
+            result = "darkpink";
 
 
         } 
@@ -302,7 +303,7 @@ private void  answer() {
 
               if(colorX == "pink" && colorY == "white" || colorX == "white" && colorY == "pink"){
 
-            result = "pale pink";
+            result = "palepink";
 
 
         } 
@@ -320,14 +321,14 @@ private void  answer() {
 
                    if(colorX == "black" && colorY == "red" || colorX == "red" && colorY == "black"){
 
-            result = "dark red";
+            result = "darkred";
 
 
         } 
 
                    if(colorX == "black" && colorY == "purple" || colorX == "purple" && colorY == "black"){
 
-            result = "dark purple";
+            result = "darkpurple";
 
 
         } 
@@ -335,14 +336,14 @@ private void  answer() {
 
                    if(colorX == "black" && colorY == "pink" || colorX == "pink" && colorY == "black"){
 
-            result = "dark pink";
+            result = "darkpink";
 
 
         } 
 
                    if(colorX == "black" && colorY == "white" || colorX == "white" && colorY == "black"){
 
-            result = "neutral white";
+            result = "neutralwhite";
 
 
         } 
@@ -366,24 +367,26 @@ private void  answer() {
 
                           if(colorX == "white" && colorY == "purple" || colorX == "purple" && colorY == "white"){
 
-            result = "light purple";
+            result = "lightpurple";
 
 
         } 
 
                           if(colorX == "white" && colorY == "pink" || colorX == "pink" && colorY == "white"){
 
-            result = "pale pink";
+            result = "palepink";
 
 
         } 
 
                           if(colorX == "white" && colorY == "black" || colorX == "black" && colorY == "white"){
 
-            result = "neutral gray";
+            result = "neutralgray";
 
 
         } 
+
+        checkingAnswer = answerRaw.ToLower().Replace(" ","");
 
         Console.WriteLine(checkingAnswer);
 
