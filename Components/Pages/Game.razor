@@ -25,10 +25,10 @@
                <button class="buttonIconStyle" @onclick="Generate" type=""><i class="iconStyle fa-solid fa-rotate" style="color: #ff6bff;"></i></button> 
                 
             </div>
-<h1 class="resultStyle">RESULLT:</h1>
+<h1 class="resultStyle">RESULLT: @result</h1>
             <label for="color" class="labelStyle block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose your answer</label>
             <input type="text" id="color" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="color..." required>
-        <button type="button"  class="buttonStyle text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">ANSWER</button>
+        <button type="button" @onclick="answer"  class="buttonStyle text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">ANSWER</button>
         </div>
   
 
@@ -47,6 +47,8 @@
 
         private int x = 0;
         private int y = 5;
+
+        private string result = "";
         private string colorX = "";
         private string colorY = "";
 Random valueX = new Random();
@@ -104,10 +106,208 @@ y = valueY.Next(1,6);
            }
    
 
-
+    
 
 }
 
+private void answer() {
+
+    @* COMBO FIRST *@
+
+        if(colorX == "red" && colorY == "red"){
+
+            result = "red";
+
+
+        } 
+
+          if(colorX == "red" && colorY == "purple" ||  colorX == "purple" && colorY == "red"){
+
+            result = "magenta";
+
+
+        } 
+
+           if(colorX == "red" && colorY == "pink" || colorX == "pink" && colorY == "red"){
+
+            result = "raspberry pink";
+
+
+        } 
+
+           if(colorX == "red" && colorY == "black" ||  colorX == "black" && colorY == "red"){
+
+            result = "dark red";
+
+
+        } 
+
+           if(colorX == "red" && colorY == "white" || colorX == "white" && colorY == "red"){
+
+            result = "pink";
+
+
+        } 
+
+        @* COMBO TWO *@
+
+           if(colorX == "purple" && colorY == "purple"){
+
+            result = "purple";
+
+
+        } 
+
+             if(colorX == "purple" && colorY == "red" || colorX == "red" && colorY == "purple"){
+
+            result = "magenta";
+
+
+        } 
+
+
+             if(colorX == "purple" && colorY == "pink" || colorX == "pink" && colorY == "purple"){
+
+            result = "magenta";
+
+
+        } 
+
+             if(colorX == "purple" && colorY == "black" || colorX == "black" && colorY == "purple"){
+
+            result = "dark purple";
+
+
+        } 
+
+             if(colorX == "purple" && colorY == "white" || colorX == "white" && colorY == "purple"){
+
+            result = "light purple";
+
+
+        } 
+
+        @* COMBO THREE *@
+
+
+             if(colorX == "pink" && colorY == "pink"){
+
+            result = "pink";
+
+
+        } 
+
+
+              if(colorX == "pink" && colorY == "red" ||  colorX == "red" && colorY == "pink"){
+
+            result = "raspberry pink";
+
+
+        } 
+
+              if(colorX == "pink" && colorY == "purple" || colorX == "purple" && colorY == "pink"){
+
+            result = "magenta";
+
+
+        } 
+
+              if(colorX == "pink" && colorY == "black" || colorX == "black" && colorY == "pink"){
+
+            result = "dark pink";
+
+
+        } 
+
+
+              if(colorX == "pink" && colorY == "white" || colorX == "white" && colorY == "pink"){
+
+            result = "pale pink";
+
+
+        } 
+
+
+        @* COMBO FOURTH *@
+
+
+              if(colorX == "black" && colorY == "black"){
+
+            result = "black";
+
+
+        } 
+
+                   if(colorX == "black" && colorY == "red" || colorX == "red" && colorY == "black"){
+
+            result = "dark red";
+
+
+        } 
+
+                   if(colorX == "black" && colorY == "purple" || colorX == "purple" && colorY == "black"){
+
+            result = "dark purple";
+
+
+        } 
+
+
+                   if(colorX == "black" && colorY == "pink" || colorX == "pink" && colorY == "black"){
+
+            result = "dark pink";
+
+
+        } 
+
+                   if(colorX == "black" && colorY == "white" || colorX == "white" && colorY == "black"){
+
+            result = "neutral white";
+
+
+        } 
+
+
+        @* COMBO FITH *@
+
+                       if(colorX == "white" && colorY == "white"){
+
+            result = "white";
+
+
+        } 
+
+                      if(colorX == "white" && colorY == "red" || colorX == "red" && colorY == "white"){
+
+            result = "pink";
+
+
+        } 
+
+                          if(colorX == "white" && colorY == "purple" || colorX == "purple" && colorY == "white"){
+
+            result = "light purple";
+
+
+        } 
+
+                          if(colorX == "white" && colorY == "pink" || colorX == "pink" && colorY == "white"){
+
+            result = "pale pink";
+
+
+        } 
+
+                          if(colorX == "white" && colorY == "black" || colorX == "black" && colorY == "white"){
+
+            result = "neutral gray";
+
+
+        } 
+
+        
+
+}
 
 
 
