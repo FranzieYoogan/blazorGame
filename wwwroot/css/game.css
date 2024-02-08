@@ -1,0 +1,39 @@
+
+
+.containerGame {
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin-top:10%;
+
+
+}
+
+.buttonStyle {
+    
+    margin-top: 1em;
+    width: 100%;
+
+}
+
+.menuGameStyle {
+
+        border: 2px solid purple;
+        padding: 30px;
+        border-radius: 30px;
+        background-color: black;
+}
+
+
+.containerColorsStyle {
+
+    display: flex;
+
+}
+
+.labelStyle {
+    color: rgb(255, 107, 255);
+    margin-top: 3em;
+
+}

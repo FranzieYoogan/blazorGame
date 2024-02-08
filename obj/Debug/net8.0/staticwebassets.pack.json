@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\css\\game.css",
+      "PackagePath": "staticwebassets\\css\\game.css"
+    },
+    {
       "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\css\\landingPage.css",
       "PackagePath": "staticwebassets\\css\\landingPage.css"
     },

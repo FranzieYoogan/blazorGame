@@ -1,2 +1,112 @@
 @page "/game"
-<h1>testing</h1>
+@rendermode InteractiveServer 
+   <link rel="stylesheet" type="" href="/css/game.css">
+
+<section >
+
+    <div class="containerGame">
+        
+    
+            
+        <div class="menuGameStyle">
+            
+       
+ 
+    
+   
+
+    
+
+               <div>
+                <section class="containerColorsStyle">
+                     <h1>COLOR: @colorX.ToUpper()</h1><h1>COLOR @colorY.ToUpper()</h1> 
+                </section>
+     
+<h1>RESULLT:</h1>
+            <label for="color" class="labelStyle block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose your answer</label>
+            <input type="text" id="color" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="color..." required>
+        <button type="button" @onclick="Generate" class="buttonStyle text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">Dark</button>
+        </div>
+  
+
+
+     </div>
+
+      <div>
+    
+   </div>
+   </div>
+</section>
+
+
+
+@code {
+
+        private int x = 0;
+        private int y = 5;
+        private string colorX = "";
+        private string colorY = "";
+Random valueX = new Random();
+Random valueY = new Random();
+private void Generate() {
+x = valueX.Next(1,6);
+y = valueY.Next(1,6);
+    if(x == 1 ) {
+
+        colorX = "red";
+          }
+        if(y == 5) {
+ colorY = "red";
+
+        }
+    if(x == 2) {
+
+        colorX = "purple";
+       
+} 
+        if( y== 4) {
+
+            colorY = "purple";
+        }
+
+    if(x == 3 ) {
+
+             colorX = "pink";
+          
+ } 
+                if( y == 3) {
+
+                    colorY = "pink";
+
+                }
+   
+   if (x == 4 ) {
+
+        colorX = "black";
+
+ } 
+            if(y == 4) {
+   colorY = "black";
+
+            }
+
+  if(x == 5 ) {
+
+        colorX = "white";
+          
+ }
+           if(y == 1) {
+ colorY = "white";
+
+           }
+   
+
+
+
+}
+
+
+
+
+
+}
