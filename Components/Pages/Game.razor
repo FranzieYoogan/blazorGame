@@ -25,10 +25,15 @@
                <button class="buttonIconStyle" @onclick="Generate" type=""><i class="iconStyle fa-solid fa-rotate" style="color: #ff6bff;"></i></button> 
                 
             </div>
-<h1 class="resultStyle">RESULLT: @result</h1>
-            <label for="color" class="labelStyle block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose your answer</label>
-            <input type="text" id="color" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="color..." required>
+<h1 class="resultStyle" style="@changeColor2">RESULLT: @result</h1>
+            <label for="color"  class="labelStyle block mb-2 text-sm font-medium text-gray-900 dark:text-white">Choose your answer</label>
+            
+        <EditForm Model="checkingAnswer">
+            <input type="text" id="color" style="@changeColor" @bind-value="checkingAnswer" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="color..." required>
+      
         <button type="button" @onclick="answer"  class="buttonStyle text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium rounded-full text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700">ANSWER</button>
+      </EditForm>
+       
         </div>
   
 
@@ -51,11 +56,20 @@
         private string result = "";
         private string colorX = "";
         private string colorY = "";
+        private string checkingAnswer {get; set;} = "";
+        private string changeColor = "";
+
+     private string changeColor2 = "";
+        
 Random valueX = new Random();
 Random valueY = new Random();
 private void Generate() {
 x = valueX.Next(1,6);
 y = valueY.Next(1,6);
+changeColor2 = "color:white";
+changeColor = "color:gray";
+checkingAnswer = "";
+result = "";
     if(x == 1 ) {
 
         colorX = "red";
@@ -110,7 +124,11 @@ y = valueY.Next(1,6);
 
 }
 
-private void answer() {
+
+
+private void  answer() {
+
+   
 
     @* COMBO FIRST *@
 
@@ -305,9 +323,23 @@ private void answer() {
 
         } 
 
+        Console.WriteLine(checkingAnswer);
+
+    if(checkingAnswer == result) {
+
+        changeColor = "color: green";
+            changeColor2 = "color: green";
+
+    } if(checkingAnswer != result) {
+
+        changeColor = "color: green";
+    changeColor2 = "color: red";
+    }
         
 
 }
+
+
 
 
 
