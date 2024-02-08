@@ -1,0 +1,22 @@
+.listContainer {
+
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    color: rgb(255, 107, 255) ;
+
+    margin-bottom: 5em;
+    margin-right: 2em;
+}
+.listStyle {
+    box-shadow: 2px 2px 4px 4px black;
+    background: linear-gradient(125deg,purple 75%, black 30% );
+    padding: 22px;
+    border-radius: 30px;
+    transform:
+    perspective(750px)
+    translate3d(0px, 0px, 10px)
+    rotateX(30deg)
+rotateY(-20deg)
+}

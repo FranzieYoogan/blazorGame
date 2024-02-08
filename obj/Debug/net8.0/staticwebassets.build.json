@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C7qH/xPiJq2JsuBBhHOjPp0ihqBV/oseL7QjTu1Du+Y=",
+  "Hash": "ayzSouecZFhM5iNkYzTtuK8OqywVwG/GsFZl85BdxSA=",
   "Source": "blazorSimpleGame",
   "BasePath": "_content/blazorSimpleGame",
   "Mode": "Default",
@@ -148,6 +148,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\landingPage.css"
+    },
+    {
+      "Identity": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\css\\list.css",
+      "SourceId": "blazorSimpleGame",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\",
+      "BasePath": "_content/blazorSimpleGame",
+      "RelativePath": "css/list.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\list.css"
     },
     {
       "Identity": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\favicon.png",

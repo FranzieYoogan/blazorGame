@@ -25,6 +25,7 @@
         border-radius: 30px;
         background-image: linear-gradient(130deg, purple 70%,black 30%);
         margin-top: 9%;
+        box-shadow: 2px 2px 2px 2px black;
 }
 
 @media only screen and (max-width: 554px) {

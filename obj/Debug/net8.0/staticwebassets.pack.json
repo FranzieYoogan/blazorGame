@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\css\\landingPage.css"
     },
     {
+      "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\css\\list.css",
+      "PackagePath": "staticwebassets\\css\\list.css"
+    },
+    {
       "Id": "C:\\blazorGame\\blazorSimpleGame\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },

@@ -1,2 +1,52 @@
 @page "/list"
-<h1>WORKED</h1>
+@rendermode InteractiveServer 
+
+    <link rel="stylesheet" type="" href="/css/list.css">
+
+
+
+    <section class="listContainer">
+
+
+        <section class="listStyle">
+            
+        <h1 style="text-align: center; width: 100%; ">COLORS COMBINATIONS</h1>
+
+        @for(int x = 0; x<@items.Length; x ++) {
+
+
+<h1>@list[x].ToUpper()</h1>
+}
+
+
+        </section>
+
+
+    </section>
+
+
+
+
+
+@code {
+
+    private int[] items =  new int [25];
+ 
+
+   string[] list = ["RED + RED = RED","red + purple = magenta", "red + pink = raspberry pink",
+  "red + black = dark red", "red + white = PINK", "purple + purple = purple", "purple + red = magenta ",
+  "purple + pink = magenta","purple + black = dark purple", "purple + white = light purple",
+  "pink + pink = pink ", "pink + red = raspberry pink", "pink + purple = magenta ", "pink + black = dark pink ",
+  "pink + white = pale pink", "black + black = black", "black + red = dark red",
+  "black + purple = dark purple", "black + pink = dark pink", "black - white = Neutral Gray", "white + white = white",
+  "white + red = PINK", "white + purple  = light purple", "white + pink = pale pink", "white + black = neutral gray" ];
+
+
+
+
+ 
+ 
+    }
+ 
+
+}
