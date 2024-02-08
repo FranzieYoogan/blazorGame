@@ -5,10 +5,11 @@
     display: flex;
     justify-content: center;
     justify-items: center;
-    margin-top:10%;
+  
 
 
 }
+
 
 .buttonStyle {
     
@@ -23,13 +24,27 @@
         padding: 30px;
         border-radius: 30px;
         background-color: black;
+        margin-top: 9%;
 }
 
+@media only screen and (max-width: 554px) {
+    .menuGameStyle {
+        margin-top: -2%;
+    }
+
+}
+
+@media only screen and (max-width: 400px) {
+    .menuGameStyle {
+        margin-top: 9%;
+    }
+
+}
 
 .containerColorsStyle {
 
     display: flex;
-
+    gap: 3em;
 }
 
 .labelStyle {
