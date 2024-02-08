@@ -102,7 +102,7 @@ h1 {
 
     position: absolute;
     bottom: 5em;
-    left: 30%;
+    left: 25%;
     display: none;
 }
 
@@ -114,12 +114,48 @@ h1 {
     top: 5em;
 }
 
+.liStyle {
+
+
+width: 100%;
+}
+
+.liStyle:hover {
+
+
+    background-color:rgb(255, 107, 255) ;
+    
+    }
+
+
+.bubblecChatStyle {
+
+    background: linear-gradient(120deg,rgb(255, 107, 255) 50%, black 30% );
+}
+
 @media only screen and (max-width: 554px) {
     .containerBubbleChat {
         position: absolute;
         bottom: 5em;
     
-    left: -10%;
+    left: -6%;
     }
 
+}
+
+@media only screen and (max-width: 400px) {
+    .containerBubbleChat {
+        position: absolute;
+        bottom: 5em;
+    
+    left: -8%;
+    }
+
+}
+
+.inputStyle:hover, .iconStyle:active, .inputStyle:focus {
+
+    border: 1px solid rgb(255, 107, 255) !important;
+    outline: 2px solid rgb(255, 107, 255) !important;
+    box-shadow: 2px 2px 2px black;
 }
