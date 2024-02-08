@@ -1,6 +1,6 @@
 @page "/game"
 @rendermode InteractiveServer 
-
+@inject NavigationManager NavigationManager
 <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" crossorigin="anonymous"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js" crossorigin="anonymous"></script>
 
@@ -85,13 +85,13 @@
    <div id="dropdownDots" style="@openMothefucka; @close" class=" z-10 openMotheFucka bg-white divide-y divide-gray-100 rounded-lg shadow w-40 dark:bg-gray-700 dark:divide-gray-600">
       <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
          <li>
-            <button class="liStyle block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yes</button>
+            <button @onclick="redirect" class="liStyle block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Yes</button>
          </li>
          <li>
             <button @onclick="closeDropDown"  class="liStyle block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">No</button>
          </li>
-        
-      
+
+      <a href="/list" style="position: absolute; visibility: hidden;"></a>
       </ul>
    </div>
 </div>
@@ -430,6 +430,13 @@ private void openDropdown() {
         click = 0;
     openMothefucka = "visibility: hidden";
     }
+
+}
+
+
+private void redirect() {
+
+    NavigationManager.NavigateTo("list");
 
 }
 

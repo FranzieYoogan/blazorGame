@@ -117,14 +117,14 @@ h1 {
 .liStyle {
 
 
-width: 100%;
+width: 100% !important;
 }
 
 .liStyle:hover {
 
 
     background-color:rgb(255, 107, 255) ;
-    
+
     }
 
 
